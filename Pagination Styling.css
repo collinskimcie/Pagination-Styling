@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #6a0dad, #8e44ad);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:600px;
+    text-align:center;
+    color:white;
+}
+
+/* Header */
+.header{
+    margin-bottom:20px;
+}
+
+.logo{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.header p{
+    opacity:0.9;
+}
+
+/* Services */
+.services{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.service{
+    background:white;
+    color:#6a0dad;
+    padding:15px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-align:left;
+    animation:fade 0.3s ease;
+}
+
+.service i{
+    font-size:22px;
+    color:#6a0dad;
+}
+
+.service-title{
+    font-weight:bold;
+}
+
+/* Pagination */
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+button{
+    background:white;
+    border:none;
+    color:#6a0dad;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.2);
+}
+
+#pages span{
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    background:white;
+    color:#6a0dad;
+    transition:0.3s;
+}
+
+#pages span.active{
+    background:#6a0dad;
+    color:white;
+}
+
+#pages span:hover{
+    background:#ddd;
+}
+
+/* Animation */
+@keyframes fade{
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:translateY(0);}
+}
+/* Footer */
+.footer{
+    margin-top:20px;
+    padding:15px;
+    text-align:center;
+    color:white;
+    font-size:14px;
+    opacity:0.9;
+}
+
+.footer i{
+    margin-right:5px;
+}
+
+.footer p:last-child{
+    font-size:13px;
+    opacity:0.8;
+}
